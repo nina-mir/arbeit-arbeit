@@ -2,6 +2,7 @@ function Footer(){
     return (
         <div className="
         mt-[1.5rem]
+        pb-[0.25rem]
         text-[1rem]
         text-center
         font-light
