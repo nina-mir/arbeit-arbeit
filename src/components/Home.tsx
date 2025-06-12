@@ -6,15 +6,16 @@ import dress_cleave from '../assets/images/dress_cleave.jpg';
 function Home() {
     return (
         <div className="flex flex-col justify-center items-center gap-5 mt-5">
-            <figure className='flex flex-col items-center'>
+            <div className='flex flex-col items-center'>
 
                 <img src={full_mesh}
                     alt="erica brooks in a mesh outfit with blurred private parts and face looking hot and super eager"
                     className="w-[300px] rounded-xl"
                 />
-                <caption className='text-[0.8rem] font-light'>"Mostly tits and ass."</caption>
+            <p className='text-[0.8rem] font-light'>"Mostly tits and ass."</p>
 
-            </figure>
+            </div>
+
 
             <div className='flex flex-col justify-center items-center'>
                 <h1 className="font-cursive text-3xl">Erica Brooks</h1>
@@ -56,13 +57,13 @@ function Home() {
                     And what will make you feel the happiest and most fulfilled after our meeting.
                 </p>
 
-                <figure className='flex flex-col items-center'>
+                <div className='flex flex-col items-center'>
                     <img src={dress_cleave}
                         alt="erica brooks in a mesh outfit with blurred private parts and face looking hot and super eager"
                         className="w-[300px] rounded-xl"
                     />
-                    <caption className='text-[0.8rem] font-light'>Do not contact me if you have less than $220. The answer is always NO!</caption>
-                </figure>
+                    <p className='text-[0.8rem] font-light'>Do not contact me if you have less than $220. The answer is always NO!</p>
+                </div>
 
 
                 <p className='font-bold'>Incall📍 Emeryville & SF:</p>
