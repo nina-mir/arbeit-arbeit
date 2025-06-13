@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function ContactCard() {
   const [showEmail, setShowEmail] = useState(false);
@@ -18,14 +18,14 @@ export default function ContactCard() {
     twitter: "@meetericabrooks"
   };
 
-  const maskEmail = (email) => {
+  const maskEmail = (email: string) => {
     const [username, domain] = email.split('@');
     const maskedUsername = username.slice(0, 2) + '●●●●●●' + username.slice(-1);
     const maskedDomain = '●●●●●●' + domain.slice(-3);
     return maskedUsername + '@' + maskedDomain;
   };
 
-  const maskPhone = (phone) => {
+  const maskPhone = (phone: string) => {
     return phone.slice(0, 4) + '●●●●●●' + phone.slice(-3);
   };
 
