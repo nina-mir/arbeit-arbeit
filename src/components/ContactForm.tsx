@@ -18,6 +18,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 // import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import ContactInfo from "@/components/ContactInfo"
+import  PageWrapper  from "@/components/PageWrapper"
+
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -53,6 +55,8 @@ export default function ContactForm() {
   }
 
   return (
+
+    <PageWrapper>
 
     <div className="flex md:flex-row flex-col gap-y-4">
       {/* <div className="px-6 mt-1">
@@ -220,5 +224,6 @@ export default function ContactForm() {
         </Form>
       </div>
     </div>
+    </PageWrapper>
   )
 }
